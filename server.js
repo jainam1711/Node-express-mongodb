@@ -28,7 +28,7 @@ mongoose.connect(dbConfig.url, {
 
 // Default route
 app.get('/', (req, res) => {
-    res.json({"message": "Welcome to EasyNotes application. Take notes quickly. Organize and keep track of all your notes."});
+    res.json({"message": "Welcome to main screen."});
 });
 
 require('./app/routes/note.routes.js')(app);

@@ -1,7 +1,7 @@
 {
-  "name": "node-easy-notes-app",
+  "name": "Node-express-mongodb",
   "version": "1.0.0",
-  "description": "Never miss a thing in Life. Take notes quickly. Organize and keep track of all your notes.",
+  "description": "Basic crud with login using node-express-mongodb.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,13 +11,18 @@
     "RestAPI",
     "MongoDB",
     "Mongoose",
-    "Notes"
+    "CRUD"
   ],
-  "author": "callicoder",
+  "author": "Jainam Shah",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
-    "mongoose": "^5.2.8"
+    "mongoose": "^5.2.8",
+    "password-hash": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jainam1711/Node-express-mongodb.git"
   }
 }

@@ -1,8 +1,17 @@
 const mongoose = require('mongoose');
+mongoose.set('useCreateIndex', true);
+mongoose.set('useFindAndModify', false);
 
 const NoteSchema = mongoose.Schema({
-    title: String,
-    content: String
+    email: {
+	    type: String,
+	    unique: true,
+	    required: true
+  	},
+    password: {
+	    type: String,
+	    required: true,
+  	}
 }, {
     timestamps: true
 });
